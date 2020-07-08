@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cgb.springboot.dao.UserDao">
+
+
+    <select id="findAll" resultType="com.cgb.springboot.domain.User">
+        select
+        id,nickname,content
+        from test
+    </select>
+
+    <insert id="insertByUser">
+
+        insert into test(nickname,content)value (#{nickname},#{content})
+
+    </insert>
+
+    <update id="update"  parameterType="com.cgb.springboot.domain.User">
+        update test
+        <set>
+            <if test="nickname != null">nickname=#{nickname},</if>
+            <if test="content != null">content=#{content}</if>
+        </set>
+        where id = #{id}
+    </update>
+
+
+</mapper>
