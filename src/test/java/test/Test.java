@@ -12,6 +12,7 @@ public class Test {
         hashtable.put(null,"");
         System.out.println(123);
 
+
     }
 
 }
