@@ -2,7 +2,7 @@ package juc.productorAndConsumer.demo1;
 
 public class TestProductAndConsumer {
 
-
+    // 线程的生产者消费者
     public static void main(String[] args) {
 
         Clerk clerk = new Clerk();
