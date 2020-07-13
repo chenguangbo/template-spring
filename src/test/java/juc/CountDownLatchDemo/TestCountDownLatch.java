@@ -14,6 +14,9 @@ public class TestCountDownLatch {
 //        Semaphore
 //        CyclicBarrier
 //        BlockingQueue
+//        ReentrantLock
+//                这能不用cas做这的判断吗,就是不用AtomicInteger,还能用什么方法实现
+//        Thread
         final CountDownLatch latch = new CountDownLatch(10);
         Stopwatch stopwatch = Stopwatch.createStarted();
         LatchDemo latchDemo = new LatchDemo(latch);
@@ -25,7 +28,7 @@ public class TestCountDownLatch {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        long elapsed = stopwatch.elapsed(TimeUnit.SECONDS);
+        long elapsed = stopwatch.elapsed(TimeUnit.NANOSECONDS);
         System.out.println(elapsed);
     }
 }
