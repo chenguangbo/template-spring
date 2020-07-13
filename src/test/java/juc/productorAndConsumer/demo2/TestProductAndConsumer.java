@@ -1,4 +1,4 @@
-package juc.productorAndConsumer;
+package juc.productorAndConsumer.demo2;
 
 public class TestProductAndConsumer {
 
@@ -67,7 +67,7 @@ class Consumer implements Runnable {
         }
     }
 }
-
+// 生产者
 class Productor implements Runnable {
     private Clerk clerk;
 
@@ -78,6 +78,11 @@ class Productor implements Runnable {
     @Override
     public void run() {
         for (int i = 0; i < 20; i++) {
+            try {
+                Thread.sleep(200);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             clerk.get();
         }
     }
