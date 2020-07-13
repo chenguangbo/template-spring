@@ -2,7 +2,7 @@ package juc.productorAndConsumer.demo2;
 
 public class TestProductAndConsumer {
 
-
+    // 比第一版  增加了200毫秒延迟  改小了总容量     从10改成了1
     public static void main(String[] args) {
 
         Clerk clerk = new Clerk();
@@ -23,7 +23,7 @@ class Clerk {
 
     public synchronized void get() {
 
-        if (product >= 10) {
+        if (product >= 1) {
             try {
                 this.wait();
             } catch (InterruptedException e) {
