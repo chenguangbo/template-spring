@@ -2,7 +2,7 @@ package juc.productorAndConsumer.demo4;
 
 public class TestProductAndConsumer {
 
-    //  两个生产者   两个消费者
+    //  两个生产者   两个消费者   // 产生了虚假唤醒
     public static void main(String[] args) {
 
         Clerk clerk = new Clerk();
