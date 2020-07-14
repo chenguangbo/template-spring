@@ -1,4 +1,4 @@
-package com.example.parse.controller;
+package  FileRead;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import com.example.parse.utils.JsonMapUtil;
+import com.cgb.springboot.sdk.util.JsonMapUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.bind.annotation.RequestMapping;
