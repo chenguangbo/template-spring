@@ -1,5 +1,6 @@
 package juc.threadPool;
 
+import java.util.concurrent.ConcurrentSkipListMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -28,6 +29,7 @@ import java.util.concurrent.Executors;
 public class Test {
 
     public static void main(String[] args) {
+        ConcurrentSkipListMap listMap = new ConcurrentSkipListMap();
 
         ExecutorService executorService = Executors.newCachedThreadPool();
 //        executorService.submit()
