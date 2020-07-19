@@ -14,6 +14,7 @@ public class TestConcurrentSkipListMap {
         System.out.println(integer);
         TreeMap<String, Object> treeMap = new TreeMap<>();
         treeMap.put("","");
+//        Collections
 //        Integer anInt = MapUtil.getInt(skipListMap, 123);
 //        System.out.println(anInt);
 //        Maps.asMap()
