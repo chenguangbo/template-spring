@@ -1,6 +1,7 @@
 package map;
 
 import java.math.BigInteger;
+import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.TreeMap;
 import java.util.concurrent.ConcurrentSkipListMap;
@@ -9,7 +10,10 @@ import org.apache.commons.collections4.MapUtils;
 public class TestConcurrentSkipListMap {
 
     public static void main(String[] args) {
+        HashMap hashMap = new HashMap();
+        hashMap.put(null,1);
 
+//        Class<?> aClass = TestConcurrentSkipListMap.class.getClassLoader().loadClass();
         Runtime runtime = Runtime.getRuntime();
         runtime.gc();
 
