@@ -12,6 +12,6 @@ public class Test2 {
         hashMap.put(null,1);
         new ScheduledThreadPoolExecutor(10);
         ScheduledExecutorService scheduledExecutorService = Executors.newScheduledThreadPool(8);
-        boo
+
     }
 }
