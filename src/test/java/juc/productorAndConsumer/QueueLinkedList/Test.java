@@ -16,6 +16,9 @@ public class Test {
         System.out.println(456);
 
 
+
+        System.out.println(123);
+
     }
 
 }
