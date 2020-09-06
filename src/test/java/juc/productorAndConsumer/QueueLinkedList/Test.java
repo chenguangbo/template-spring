@@ -15,8 +15,7 @@ public class Test {
 
         System.out.println(456);
 
-
-
+        System.out.println("我喜欢你 你喜欢我吗 我不知道 我可以得到你吗 我好喜欢      wizgeb");
         System.out.println(123);
 
     }
